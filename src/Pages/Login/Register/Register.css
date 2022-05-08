@@ -1,0 +1,50 @@
+.registration-header {
+    color: brown;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.register-form {
+    margin: 0 auto;
+    padding: 10px;
+    width: 40%;
+    background-color: bisque;
+}
+
+.register-header {
+    color: brown;
+}
+
+.register-form input:not([type=checkbox]) {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.register-btn {
+    background-color: rgb(158, 86, 34);
+    color: bisque;
+    border: 0;
+    padding: 5px 25px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.register-btn:hover {
+
+
+    background-color: brown;
+    color: rgb(247, 234, 234);
+}
+
+@media only screen and (max-width:576px) {
+    .registration-carousel {
+        display: none;
+    }
+}

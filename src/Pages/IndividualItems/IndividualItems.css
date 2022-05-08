@@ -1,0 +1,24 @@
+.card {
+    background-color: bisque;
+}
+
+.button-33 {
+    border: 0;
+    background-color: brown;
+    margin: 4px;
+}
+
+
+
+.container {
+    position: relative;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 600px;
+    /* background: #cf0a2c; */
+    border-radius: 20px;
+    overflow: hidden;
+}

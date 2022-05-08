@@ -1,0 +1,19 @@
+.social-register-btn {
+    background-color: rgb(158, 86, 34);
+    color: bisque;
+    border: 0;
+    padding: 5px 25px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.social-register-btn:hover {
+    background-color: brown;
+    color: white;
+}
+
+
+.Social-login-container {
+    background-color: bisque;
+}

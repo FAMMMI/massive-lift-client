@@ -1,0 +1,17 @@
+.home-text {
+    text-decoration: none;
+    color: bisque;
+    font-weight: 600;
+    font-size: large;
+    background-color: rgba(201, 42, 42, 0.842);
+
+}
+
+.not-found-container {
+    background-color: bisque;
+}
+
+.home-text:hover {
+    background-color: brown;
+    color: white;
+}

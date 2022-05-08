@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Barbell",
+        "price": "600",
+        "description": "It is used for Biceps and triceps and also for shoulder .",
+        "quantity": "10",
+        "supplierName": "AB Enterprise",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj1BPYt3SFVkiMSFzT41n_tboRZubLCjFUKA&usqp=CAU"
+    },
+    {
+        "id": 2,
+        "name": "Dumb Bells",
+        "price": "300",
+        "description": "Dumb Bells are used for Biceps forearms , which are very useful to all types of exercise",
+        "quantity": "15",
+        "supplierName": "AB Enterprise",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYT1y_KzaVByRGfZ_98-laYJml86bhS3xxug&usqp=CAU"
+    },
+    {
+        "id": 3,
+        "name": "Hammer Strength Fitness",
+        "price": "1200",
+        "description": "It is used for back exercise and also for shoulder exercise .",
+        "quantity": "15",
+        "supplierName": "JB Enterprise",
+        "img": "https://p.globalsources.com/IMAGES/PDT/B1143026681/Hammer-Strength-Fitness-Equipment.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Rowing machine",
+        "price": "1000",
+        "description": "It is a rope based machine mainly used for triceps and back exercise.",
+        "quantity": "19",
+        "supplierName": "JB Enterprise",
+        "img": "https://gymequipmentcenter.com/wp-content/uploads/guide/Rowing-Machine.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Incline Bench Press",
+        "price": "900",
+        "description": "It is used for chest exercise . ",
+        "quantity": "19",
+        "supplierName": "JB Enterprise",
+        "img": "https://i.pinimg.com/originals/30/6f/d2/306fd27bb9181af3e0f462a95bd6dc7d.jpg"
+    }
+]
