@@ -37,7 +37,7 @@ const SingleMyItem = (props) => {
 
     const navigate = useNavigate();
     const newPath = (id) => {
-        navigate(`/inventory/${id}`);
+        navigate(`/product/${id}`);
     }
 
     const Delete = id => {

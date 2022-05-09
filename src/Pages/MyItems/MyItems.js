@@ -12,24 +12,38 @@ import './MyItems.css'
 const MyItems = () => {
     const [myItems, setMyItems] = useState([]);
     const [data, setData] = useState([]);
+    const [user] = useAuthState(auth);
     const navigate = useNavigate();
-    const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/product')
-            .then(res => res.json())
-            .then(data => setProducts(data));
-    }, [])
-    const [user] = useAuthState(auth);
+        // {
+        //     products.filter(p => user.email === p.email).map(product => <div
+        //         key={product._id}> </div>)}
+        const getMtItems = async () => {
+            const email = user?.email;
+            const url = `http://localhost:5000/myItems?email=${email}`;
+            try {
+                const { data } = await axiosPrivate.get(url);
+                setMyItems(data);
+            }
+            catch (error) {
+                console.log(error.message);
+                if (error.response.status === 401 || error.response.status === 403) {
+                    signOut(auth);
+                    navigate('/login');
+                }
+            }
+        }
+        getMtItems();
+
+    }, [user, myItems])
 
 
 
     return (
         <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3'>
             {
-                products.filter(p => user.email === p.email).map(product => <SingleMyItem key={product._id} item={product}></SingleMyItem>)
-
-                // myItems.map(items => <SingleMyItem key={items._id} item={items}></SingleMyItem>)
+                myItems.map(items => <SingleMyItem key={items._id} item={items}></SingleMyItem>)
             }
         </div>
     );
