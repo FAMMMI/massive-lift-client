@@ -13,6 +13,8 @@ import AddInvertory from './Pages/AddInventory/AddInventory';
 import ManageInventory from './Pages/ManageInventory/ManageInventory';
 import SingleInventory from './Pages/SingleInventory/SingleInventory';
 import MyItems from './Pages/MyItems/MyItems';
+import Blogs from './Pages/Blogs/Blogs'
+
 
 
 
@@ -38,6 +40,7 @@ function App() {
           <MyItems></MyItems>
         </RequireAuth>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
