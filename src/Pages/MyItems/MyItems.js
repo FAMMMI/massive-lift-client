@@ -17,20 +17,21 @@ const MyItems = () => {
 
     useEffect(() => {
 
-        const getMtItems = async () => {
+        const getMtItems = () => {
             const email = user?.email;
             const url = `http://localhost:5000/myitems?email=${email}`;
-            try {
-                const { data } = await axiosPrivate.get(url);
-                setMyItems(data);
-            }
-            catch (error) {
-                console.log(error.message);
-                if (error.response.status === 401 || error.response.status === 403) {
-                    signOut(auth);
-                    navigate('/login');
-                }
-            }
+            fetch(url, {
+                method: 'GET',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+                .then(res => res.json())
+                .then(result => {
+                    console.log(result);
+                    setMyItems(result);
+                })
         }
         getMtItems();
 
