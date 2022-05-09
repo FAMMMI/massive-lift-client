@@ -3,8 +3,16 @@
     text-align: center;
 }
 
+.add-form {
+    text-align: center;
+}
+
 .form-submit {
     border: 1px solid bisque;
     background-color: brown;
     color: bisque;
+}
+
+.input-group {
+    justify-content: center;
 }
