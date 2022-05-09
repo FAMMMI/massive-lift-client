@@ -1,0 +1,12 @@
+.About-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.About-blog {
+    margin: 10px;
+    font-size: x-large;
+    font-weight: 500;
+}

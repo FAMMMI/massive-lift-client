@@ -3,6 +3,9 @@ import Banner from '../Banner/Banner';
 import { useNavigate } from 'react-router-dom';
 import InvididualItems from '../../IndividualItems/IndividualItems';
 import GetData from '../../../Hooks/GetData';
+import './Home.css';
+import AboutUs from '../AboutUs/AboutUs';
+import NewsLetter from '../NewsLetter/NewsLetter';
 
 const Home = () => {
     const [getData, setGetData] = GetData();
@@ -14,6 +17,8 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <AboutUs></AboutUs>
+            <NewsLetter></NewsLetter>
             <div className="">
                 <h1 className='sec-2-header fs-4 button-1'>Inventory</h1>
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3'>

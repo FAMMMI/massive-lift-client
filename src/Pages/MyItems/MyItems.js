@@ -19,7 +19,7 @@ const MyItems = () => {
 
         const getMtItems = async () => {
             const email = user?.email;
-            const url = `http://localhost:5000/myItems?email=${email}`;
+            const url = `http://localhost:5000/myitems?email=${email}`;
             try {
                 const { data } = await axiosPrivate.get(url);
                 setMyItems(data);

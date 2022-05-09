@@ -11,15 +11,15 @@ const InvididualItems = (props) => {
     const [DecreaseByOne, IncreaseByOne] = AllFunctions();
     const navigate = useNavigate();
 
-    const [car, setCar] = useState([]);
+    const [instrument, setInstrument] = useState([]);
     const [show, setShow] = useState(false);
     const [getData, setGetData] = GetData();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product`)
+        fetch('http://localhost:5000/product')
             .then(res => res.json())
-            .then(data => setCar(data));
-    }, [car])
+            .then(data => setInstrument(data));
+    }, [instrument])
 
     const newPath = (id) => {
         navigate(`/product/${id}`);
@@ -47,7 +47,7 @@ const InvididualItems = (props) => {
         handleShow();
     }
     return (
-        <div className='p-5'>
+        <div className='p-5 body'>
             <div className="container">
                 <div className='card'>
                     <h5 className='my-3 text-start'><span className='item-span'>{name}</span></h5>

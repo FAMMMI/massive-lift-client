@@ -49,7 +49,7 @@ const SingleMyItem = (props) => {
             <div className='card h-100 my-4 justify-content-center'>
                 <h5 className='my-3 text-center'><span className='item-span'>{name}</span></h5>
                 <div className='img-div'>
-                    <img src={img} width="500px" className='img-fluid' alt="car image" />
+                    <img src={img} width="500px" className='img-fluid' />
                 </div>
                 <p className='text-center fs-5'>{description}</p>
                 <h5 className='text-center'>Rating: <span className='item-span'>{price}</span></h5>

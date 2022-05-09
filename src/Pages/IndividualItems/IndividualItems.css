@@ -1,13 +1,17 @@
-.card {
-    background-color: bisque;
-}
+.card {}
 
 .button-33 {
     border: 0;
     background-color: brown;
-    margin: 4px;
+    color: bisque;
+    border: 1px solid bisque;
+    border-radius: 4px;
+    margin: 4px 10px;
 }
 
+.body {
+    background-color: rgb(250, 241, 229);
+}
 
 
 .container {
@@ -21,4 +25,5 @@
     /* background: #cf0a2c; */
     border-radius: 20px;
     overflow: hidden;
+    background-color: bisque;
 }
