@@ -6,6 +6,12 @@
 
 }
 
+.about-title {
+    color: brown;
+    font-weight: 700;
+    font-size: x-large;
+}
+
 .About-blog {
     margin: 10px;
     font-size: large;
@@ -14,8 +20,8 @@
 
 .about-pic {
     height: 400px;
-    width: 450px;
-    padding-left: 10px;
+    width: 380px;
+
     padding-top: 10px;
 }
 

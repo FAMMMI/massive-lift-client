@@ -4,8 +4,8 @@ import './NewsLetter.css';
 
 const NewsLetter = () => {
     return (
-        <div>
-            <h2>Join Our NewsLetter !</h2>
+        <div className='pt-4'>
+            <h2 className='newsletter-title'>Join Our NewsLetter !</h2>
             <div className='w-50 mx-auto mt-3 mb-3'>
                 <Form className="d-flex">
                     <FormControl
@@ -14,7 +14,7 @@ const NewsLetter = () => {
                         className="me-2"
                         aria-label="Email"
                     />
-                    <Button className="button-33">Join Now</Button>
+                    <button className='button-33 p-2'>Join Now</button>
                 </Form>
             </div>
         </div >
