@@ -12,7 +12,7 @@ const AllFunctions = () => {
 
         const newItem = { name: item.name, description: item.description, price: item.price, img: item.img, supplierName: item.supplierName, quantity: newQuantity };
 
-        const url = `http://localhost:5000/product/${item._id}`;
+        const url = `https://rocky-tundra-18362.herokuapp.com/product/${item._id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -35,7 +35,7 @@ const AllFunctions = () => {
 
         const newItem = { name: item.name, description: item.description, price: item.price, img: item.img, supplierName: item.supplierName, quantity: newQuantity };
 
-        const url = `http://localhost:5000/product/${item._id}`;
+        const url = `https://rocky-tundra-18362.herokuapp.com/product/${item._id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

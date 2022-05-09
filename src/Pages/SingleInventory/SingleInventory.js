@@ -11,7 +11,7 @@ const SingleInventory = () => {
     const [instrument, setInstrument] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://rocky-tundra-18362.herokuapp.com/product/${id}`)
             .then(res => res.json())
             .then(data => setInstrument(data));
     }, [instrument])

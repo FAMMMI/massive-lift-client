@@ -21,7 +21,7 @@ const MyItems = () => {
         //         key={product._id}> </div>)}
         const getMtItems = async () => {
             const email = user?.email;
-            const url = `http://localhost:5000/myItems?email=${email}`;
+            const url = `https://rocky-tundra-18362.herokuapp.com/myItems?email=${email}`;
             try {
                 const { data } = await axiosPrivate.get(url);
                 setMyItems(data);

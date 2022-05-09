@@ -2,6 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Features and Functionality
+
+* A mordern gym instruments inventory website.
+* Here user can add their product and also restock and deliver their product.
+* Database is used for storing data.
+* User can add items to the inventory, meantime the database will be updated.
+* User can only see his/her added items in the My Items Section.
+
+
+## Technologies (frameworks, libraries) used in Client Side
+
+* React Route
+* React Bootstrap
+* Firebase
+* React Firebase Hooks
+* Toastify
+
+## Technologies (frameworks, libraries) used in Server Side
+* Express js
+* MongoDb
+* JWT Token
+
 ## Available Scripts
 
 In the project directory, you can run:

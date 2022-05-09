@@ -10,7 +10,7 @@ const ManageInventory = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://localhost:5000/product')
+        fetch('https://rocky-tundra-18362.herokuapp.com/product')
             .then(res => res.json())
             .then(newData => {
                 const match = newData.filter(item => item.name.toLowerCase().includes(searchText));

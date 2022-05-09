@@ -13,7 +13,7 @@ const AddInvertory = () => {
         const newItem = { name: event.target.name.value, description: event.target.description.value, price: event.target.price.value, img: event.target.img.value, supplierName: event.target.supplierName.value, quantity: event.target.quantity.value, email: event.target.email.value };
 
         event.preventDefault();
-        const url = `http://localhost:5000/product`;
+        const url = `https://rocky-tundra-18362.herokuapp.com/product`;
         fetch(url, {
             method: 'POST',
             headers: {

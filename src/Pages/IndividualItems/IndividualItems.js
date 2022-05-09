@@ -16,7 +16,7 @@ const InvididualItems = (props) => {
     const [getData, setGetData] = GetData();
 
     useEffect(() => {
-        fetch('http://localhost:5000/product')
+        fetch('https://rocky-tundra-18362.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setInstrument(data));
     }, [instrument])
@@ -28,7 +28,7 @@ const InvididualItems = (props) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const confirm = id => {
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://rocky-tundra-18362.herokuapp.com/product/${id}`;
         fetch(url, {
             method: 'DELETE'
         })
