@@ -52,7 +52,7 @@ const InvididualItems = (props) => {
                 <div className='card'>
                     <h5 className='my-3 text-start'><span className='item-span'>{name}</span></h5>
                     <div className='imgBx'>
-                        <img src={img} className='img-fluid' alt="car images" />
+                        <img src={img} className='img-fluid' />
                     </div>
                     <div className="contentBx">
                         <p className='text-start fs-5'>{description}</p>
