@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-Livesite Link [Massive Lift-Up](https://assignment-11-acf59.web.app/).
+Livesite Link [Massive Lift-Up](https://assignment-11-acf59.web.app/)
+[https://assignment-11-acf59.web.app/].
 
 ## Features and Functionality
 
