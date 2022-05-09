@@ -47,7 +47,7 @@ const InvididualItems = (props) => {
         handleShow();
     }
     return (
-        <div className='p-5 body'>
+        <div className='body'>
             <div className="container">
                 <div className='card'>
                     <h5 className='my-3 text-start'><span className='item-span'>{name}</span></h5>

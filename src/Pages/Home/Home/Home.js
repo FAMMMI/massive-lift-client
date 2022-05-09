@@ -20,13 +20,13 @@ const Home = () => {
             <AboutUs></AboutUs>
             <NewsLetter></NewsLetter>
             <div className="">
-                <h1 className='sec-2-header fs-4 button-1'>Inventory</h1>
+                <h1 className='sec-2-header fs-4 '>Inventory</h1>
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3'>
                     {
                         getData.slice(0, 6).map(items => <InvididualItems key={items._id} items={items} fromHome={fromHome}></InvididualItems>)
                     }
                 </div>
-                <button onClick={() => goToManageInventory()} className='button-2 my-5'>Visit Inventory</button>
+                <button onClick={() => goToManageInventory()} className='button-2 my-3'>Visit Inventory</button>
             </div>
 
         </div>
