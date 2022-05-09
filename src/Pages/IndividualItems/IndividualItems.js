@@ -56,7 +56,7 @@ const InvididualItems = (props) => {
                     </div>
                     <div className="contentBx">
                         <p className='text-start fs-5'>{description}</p>
-                        <h5 className='text-start'>price: <span className='item-span'>{price}</span></h5>
+                        <h5 className='text-start'>Price: <span className='item-span'>${price}</span></h5>
                         <h5 className='text-start'>Supplier Name: <span className='item-span'>{supplierName}</span></h5>
                         <h5 className='text-start'>Quantity: <span className='item-span'>{quantity}</span></h5>
                         {
